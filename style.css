@@ -10,17 +10,21 @@ body{
 	height: 100vh;
 	padding: 0.7rem;
 }
+
 .sidebar{
 	width: 340px;
 	border-radius: 0.5rem;
 	background-color: black;
 	margin-right: 0.5rem;
 }
+
 .main-content{
 	flex: 1;
 	border-radius: 1rem;
 	overflow: auto;
+	padding: 0 1.5rem 0 1.5rem;
 }
+
 .music-player{
 	position: fixed;
 	bottom: 0px;
@@ -33,6 +37,7 @@ a{
 	text-decoration: none;
 	color: #fff;
 }
+
 .nav{
 	color: white;
 	background-color: #121212;
@@ -61,6 +66,7 @@ a{
 .nav-option i{
 	font-size: 1.25rem;
 }
+
 .nav-option a{
 	font-size: 1rem;
 	margin: 1rem;
@@ -73,15 +79,18 @@ a{
 	margin: 0.5rem;
 	padding: 0.5rem;
 }
+
 .option{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
+
 .lib-option img{
 	width: 1.25rem;
 	height: 1.25rem;
 }
+
 .icon{
 	font-size: 1.23rem;
 	display: flex;
@@ -95,6 +104,7 @@ a{
 .icon i:hover{
 	opacity: 1;
 }
+
 .box{
 	background-color: #232323;
 	height: 8rem;
@@ -107,10 +117,12 @@ a{
 	font-size: 1rem;
 	font-weight: 500;
 }
+
 .box-p2{
 	font-size: 0.75rem;
 	opacity: 0.9;
 }
+
 .badge{
 	background-color: white;
 	border: none;
@@ -120,16 +132,19 @@ a{
 	margin-top: 0.5rem;
 	width: fit-content;
 }
+
 .sticky-nav {
   position: sticky;
   top: 0;
   background-color: #121212;
 }
+
 .main-content {
   flex: 1;
   border-radius: 1rem;
   overflow: auto; /* This makes sticky-nav scroll too */
 }
+
 .sticky-nav {
 	position: sticky;
 	top: 0;
@@ -138,20 +153,67 @@ a{
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 0 1rem 0;
+	z-index: 10;
         }
+        
 .stickynav-icons {
 	margin-left: 0.75rem;
-	
 }
-.yash{
+
+.sticky-nav-option{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.yash button{
+
+.sticky-nav-option button{
 	margin-right: 0.5rem;
 }
+
 .nav-item{
 	margin-right: 1rem;
 }
-.da
+
+@media( max-width: 1000px) {
+.hide{
+	display: none;
+      }
+}
+
+.card{
+	background-color: #232323;
+	width: 150px;
+	padding: 0.7rem;
+	border-radius: 0.65rem;
+	margin-left: 0.5rem;
+}
+
+.card-container{
+	display: flex;
+}
+.card-img{
+	width: 100%;
+	border-radius: 0.5rem;
+}
+.card-title{
+	font-weight: 600;
+}
+.card-info{
+	font-size: 0.85rem;
+	opacity: 0.5;
+}
+.cards-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer{
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.line{
+	width: 90%;
+	height: 50%;
+	border-top: 1px solid white;
+}
