@@ -217,3 +217,23 @@ a{
 	height: 50%;
 	border-top: 1px solid white;
 }
+.music-player{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 30rem;
+}
+.player-control img{
+	height: 1rem;
+	margin-right: 0.9rem;
+	opacity: 0.7;
+	margin-left: 4.2rem;
+
+}
+.player-control img:hover{
+	height: 1rem;
+	opacity: 1;
+}
+.progress-bar{
+	width: 30rem;
+}
